@@ -5,6 +5,7 @@
 
 int sorted[MAX_SIZE];
 
+// 횟수 수정 필요
 void merge(int list[], int left, int mid, int right, int* move_count, int* compare_count, int print) {
 	int i, j, k, l;
 	i = left;
