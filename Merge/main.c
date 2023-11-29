@@ -19,6 +19,8 @@ void merge(int list[], int left, int mid, int right, int* move_count, int* compa
 		}
 		else {
 			sorted[k++] = list[j++];
+			(*compare_count)++;
+			(*move_count)++;
 		}
 	}
 
@@ -95,8 +97,8 @@ int main()
 	// 반복
 	for (int k = 1; k < MAX_SIZE; k++) {
 		// 이동 변수 초기화
-		int move_count = 0;
-		int compare_count = 0;
+		move_count = 0;
+		compare_count = 0;
 
 		// 난수 리스트 생성
 		for (int i = 0; i < MAX_SIZE; i++) {
