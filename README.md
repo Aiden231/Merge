@@ -1,2 +1,2 @@
 # Merge Sort
-![](./reuslt.png)
+![](./result.png)
